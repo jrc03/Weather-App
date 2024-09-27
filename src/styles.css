@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #e8f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .weather-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .weather-header {
+    background-color: #0077b6;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .search-section {
+    display: flex;
+    margin: 20px 0;
+    justify-content: center;
+  }
+  
+  #city-input {
+    padding: 10px;
+    border: 1px solid #0077b6;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+  
+  #search-btn {
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  #search-btn:hover {
+    background-color: #005f8e;
+  }
+  
+  .weather-info {
+    margin-top: 20px;
+  }
+  
+  #city-name {
+    font-size: 1.8rem;
+    color: #0077b6;
+  }
+  
+  #temperature {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  #weather-condition {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  #weather-icon {
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+  }
+  
+
+  @media (max-width: 500px) {
+    .weather-container {
+      padding: 15px;
+    }
+  
+    #city-input, #search-btn {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+
+  /* Toggle Switch Styles */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
